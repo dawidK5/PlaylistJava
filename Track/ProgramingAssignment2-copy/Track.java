@@ -41,7 +41,7 @@ public class Track implements Comparable<Track> {
         return this.artist;
     }
 
-    public void setTitle(String number) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
@@ -49,7 +49,7 @@ public class Track implements Comparable<Track> {
         return this.title ;
     }
     
-     public void setDuration(int duration) {
+    public void setDuration(int duration) {
         this.duration = duration;
     }
     
@@ -68,7 +68,7 @@ public class Track implements Comparable<Track> {
     public String toString() {
         minutes = this.duration / 60;
         seconds = this.duration % 60;
-        return "(" + this.title + " _ " + this.artist + " _ " + minutes + ":" + seconds + " _ " + this.year + ")";
+        return "(" + this.title + " _ " + this.artist + "_" + minutes + ":" + seconds + " _ " + this.year + ")";
     }
 
     public int compareTo(Track other) {

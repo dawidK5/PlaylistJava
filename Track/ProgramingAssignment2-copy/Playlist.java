@@ -14,13 +14,11 @@ import java.util.*;
 // Add private helper methods if needed
 public class Playlist {
     private String playlistName;
-    // we have to make instance variable for the Collection of Tracks
-    
-    
-    
+    // we have to make instance variable for the Collection of Tracks    
     // 2 constructors
    public Playlist() {
         // initialises empty playlist called My playlist#1 (or next, consecutive number)
+        
    }
    public Playlist(String listName) {
         // initialises empty playlist from name given
