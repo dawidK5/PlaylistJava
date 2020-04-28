@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Track
+comment1.params=artist\ title
+comment1.target=Track(java.lang.String,\ java.lang.String)
+comment10.params=
+comment10.target=int\ getYear()
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment12.params=other
+comment12.target=int\ compareTo(Track)
+comment2.params=artist\ title\ duration\ year
+comment2.target=Track(java.lang.String,\ java.lang.String,\ int,\ int)
+comment3.params=title
+comment3.target=void\ setName(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getArtist()
+comment5.params=number
+comment5.target=void\ setTitle(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getitle()
+comment7.params=duration
+comment7.target=void\ setDuration(int)
+comment8.params=
+comment8.target=int\ getDuration()
+comment9.params=year
+comment9.target=void\ setYear(int)
+numComments=13
