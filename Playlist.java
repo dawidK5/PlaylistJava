@@ -14,17 +14,22 @@ import java.util.*;
 // Look through the ContactList (on GitHub in a subfolder), some of the code needed is there
 // Add private helper methods if needed
 public class Playlist {
-    private String playlistName;
-    // we have to make instance variable for the Collection of Tracks
-    
-    
-    
-    // 2 constructors
-   public Playlist() {
-        // initialises empty playlist called My playlist#1 (or next, consecutive number)
+   private ArrayList<Track> playlist;
+   String playlistNumber;
+   int counter = 0;
+   String playlistName;
+   
+   
+   // we have to make instance variable for the Collection of Tracks    
+   // 2 constructors
+   public Playlist() { 
+       String list1 = "cheese";
+       playlist = new ArrayList<Track>();
+       // initialises empty playlist called My playlist#1 (or next, consecutive number)
+        
    }
    public Playlist(String listName) {
-        // initialises empty playlist from name given
+        //(listName) = new ArrayList<String>();
    }
    
    public void setPlaylistName(String listName) {
