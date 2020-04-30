@@ -1,3 +1,5 @@
+package Hash;
+
 /**
  * Track class stores the details of each individual track
  *

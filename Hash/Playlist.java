@@ -1,3 +1,5 @@
+package Hash;
+
 /**
  * Playlist class stores the list of playlist to be played
  *
@@ -17,24 +19,27 @@ import java.util.*;
 public class Playlist {
    private ArrayList<Track> playlist;  
    int playlistNumber = 1;
-   HashMap<String,ArrayList<String>> arraynames = new HashMap<String,ArrayList<String>>();
-        public void PlayList() {
-        arraynames.put("Playlist"+playlistNumber, new ArrayList<String>());
+   HashMap<String,ArrayList<String>> playlists = new HashMap<String,ArrayList<String>>();
+    public void PlayList() {
+        playlists.put("Playlist"+playlistNumber, new ArrayList<String>());
         playlistNumber++;
     }
     public int Playlist(String name){
-         arraynames.put(name, new ArrayList<String>());
+         playlists.put(name, new ArrayList<String>());
          playlistNumber++;
     }
     public int add(String Track) {
-        int index = Collections.binarySearch(playlist,newEntry);
-        if(index < 0) {
-            index = -(index+1);
-            playlist.add(index,newEntry);
-        }
-        return index;
+        playlists.names;
     }
-
+    public String toString(String name){
+        System.out.println(name + " -> " +  playlists.get(name));
+        return (name + " -> " +  playlists.get(name));
+    }
+    public void setName(String name){
+        playlists.put(name, new ArrayList<String>());
+        playlists
+        
+    }
     public void addAll(playlist additionalplaylist) {
         for(int i = 0; i < additionalplaylist.size(); i++) {
             add(additionalplaylist.get(i));
@@ -47,7 +52,13 @@ public class Playlist {
         }
         return null;
     }
-    
+    public void playOnly(int year){
+    String[] myStringArray = new String[10];
+    for(int i=0; i<playlist.get(name).size; i++){
+    if(playlist.get()year == year){myStringArray.add(playlist.get)}
+    }
+    }
+
     void sort() {
         Collections.sort(playlist);
     }
