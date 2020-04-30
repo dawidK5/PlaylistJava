@@ -52,13 +52,24 @@ public class Playlist {
         }
         return null;
     }
-    public void playOnly(int year){
-    String[] myStringArray = new String[10];
-    for(int i=0; i<playlist.get(name).size; i++){
-    if(playlist.get()year == year){myStringArray.add(playlist.get)}
-    }
-    }
+     public void playOnly(int year){
+        for(int i=0; i<playlist.size(); i++){
+            if(playlist.get(i).getYear() == year){
+                System.out.println(playlist.get(i));
 
+            }
+        } 
+
+    }
+    public void playOnly(String artist){
+        for(int i=0; i<playlist.size(); i++){
+            if((playlist.get(i).getArtist()).equalsIgnoreCase(artist)){
+                System.out.println(playlist.get(i));
+                
+            }
+        }
+        
+    }
     void sort() {
         Collections.sort(playlist);
     }
